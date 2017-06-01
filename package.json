@@ -1,0 +1,36 @@
+{
+  "name": "pf-con-2017",
+  "version": "1.0.3",
+  "description": "Patternfly Conference 2017 Web Components Presentation",
+  "main": "index.js",
+  "dependencies": {
+    "gulp-webserver": "~0.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-bump": "^0.1.11",
+    "gulp-concat": "^2.3.4",
+    "gulp-sass": "^2.0.1",
+    "gulp-webserver": "^0.7.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "gulp",
+    "ghpages": "git subtree push --prefix demo origin gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/priley86/pf-con-2017.git"
+  },
+  "keywords": [
+    "web",
+    "components",
+    "presentation"
+  ],
+  "author": "Patrick Riley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/priley86/pf-con-2017/issues"
+  },
+  "homepage": "https://github.com/priley86/pf-con-2017"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "pf-con-2017",
+  "version": "1.0.2",
+  "homepage": "https://github.com/priley86/pf-con-2017",
+  "authors": [
+    "Patrick Riley <priley86@gmail.com>"
+  ],
+  "description": "A Patternfly Conference 2017 presentation about Web Components",
+  "main": "/dist/web-presentation.html",
+  "keywords": [
+    "html5",
+    "web components",
+    "web-components",
+    "shadow dom",
+    "html templates",
+    "custom elements",
+    "presentation"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "demo",
+    "node_modules",
+    "src",
+    ".gitignore",
+    "bower.json",
+    "gulpfile.js",
+    "package.json",
+    "README.md"
+  ]
+}
