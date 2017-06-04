@@ -163,4 +163,8 @@ var Pythagoras = function (_Component2) {
 	return Pythagoras;
 }(Component);
 
-render(h(Demo, null), document.querySelector("#pythagoras"));
+
+window.startPreactDemo = function(){
+  document.querySelector("#pythagoras").innerHTML = "";
+  render(h(Demo, null), document.querySelector("#pythagoras"));
+}

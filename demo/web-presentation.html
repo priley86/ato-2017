@@ -52,12 +52,16 @@
       // Bind onhashchange
       window.addEventListener("hashchange", function(){
         this.goToSlide(getSlideNumberFromHash());
+        var slide = getSlideNumberFromHash();
+        if(slide === 30){
+          window.startPreactDemo();
+        }
       }.bind(this));
     }
     
     function nextStep() {
       if(this.slideData.activeSlideElement && !this.slideData.activeSlideElement.nextFragment()) {
-        this.nextSlide();  
+        this.nextSlide();
       }
     }
     
@@ -105,6 +109,11 @@
         slideData.activeSlide = number;
         history.pushState(null, null, '#' + number);
         dispatchSlideChangedEvent.call(this);
+
+        console.log(number);
+        if(number === 30){
+          window.startPreactDemo();
+        }
       }.bind(this));
     }
 

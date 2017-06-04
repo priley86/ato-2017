@@ -19,6 +19,7 @@
       h4 { position:fixed; left:0; top:0; margin:0; padding:5px; z-index:100; }
       progress-spinner { vertical-align:middle; }
   </style>
+  <script src="preact-demo.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
 
     <!-- Welcome -->
     <web-slide-title class="patternfly-bg" data-transition="moveFromBottom">
-      <h1>Patternfly Web Components</h1>
+      <h1>PatternFly Web Components</h1>
       <br/>
       <h1>#PFCON2017</h1>
       <br/>
@@ -41,9 +42,9 @@
       <h1>Introduction</h1>
       <h2>Topics Covered</h2>
       <ul>
-        <li>Web Component Basics &amp; Web Component Standards</li>
-        <li>Web Component Framework Interoperability &amp; React / Angular2 Demos</li>
-        <li>Advanced Framework Concepts &amp; Javascript Patterns</li>
+        <li>Web Component introduction &amp; Web Component standards</li>
+        <li>Web Component framework interoperability &amp; React / Angular2 demos</li>
+        <li>Advanced framework concepts &amp; Javascript patterns</li>
         <li>Closing notes and current discussion topics</li>
       </ul>
       <br/>
@@ -361,7 +362,7 @@ import {Alert} from 'patternfly-react-shims'
     <!-- Framework Shims -->
     <web-slide class="orange-bg" data-transition="moveToLeft">
       <h1>Framework Extensions (shims)</h1>
-      <p> Sometimes it is desirable to consume components via framework shims to customize these communications and ease consumption. <a href="https://jsfiddle.net/patrickriley/h3qwqam0/8/">jsfiddle</a></p>
+      <p> Sometimes it is desirable to consume components via framework shims to customize these communications. <a href="https://jsfiddle.net/patrickriley/h3qwqam0/8/">jsfiddle</a></p>
       <h2>Shims can help with the following:</h2>
       <ul>
         <li>Making the component feel like a framework component to the consumer</li>
@@ -422,7 +423,7 @@ import {Alert} from 'patternfly-react-shims'
         <li>Should the element support <b>focus</b> via Tab key or support other <b>keyboard access</b>?</li>
         <li>Is the styling <b>presentable, extendable, responsive</b>?</li>
         <li>Is the element <b>API</b> documented?</li>
-        <li>Is the network and render <b>performance</b> efficient?</li>
+        <li>Are the network and render <b>performance</b> efficient?</li>
         <li>Are strings, currencies, and dates <b>localizable</b>?</li>
       </ul>
       <img class="logo-brand-image" src="img/logo-brand.svg" />
@@ -430,7 +431,7 @@ import {Alert} from 'patternfly-react-shims'
 
     <!-- Demo Patternfly WC Site -->
     <web-slide class="clear-bg" data-transition="moveFromBottom">
-      <h1>Patternfly Webcomponents Site & Demo Apps</h1>
+      <h1>PatternFly Webcomponents Site & Demo Apps</h1>
       <ul>
         <li><a href="https://patternfly-webcomponents.github.io">https://patternfly-webcomponents.github.io</a></li>
       </ul>
@@ -502,13 +503,13 @@ import {Alert} from 'patternfly-react-shims'
 
     <!-- Contributing to Patternfly -->
     <web-slide class="clear-bg no-pad" data-transition="moveFromBottom">
-      <h1>The Patternfly Community</h1>
-      <p>We gladly welcome your UX, Design, and Dev ideas in our Patternfly community.</p>
+      <h1>The PatternFly Community</h1>
+      <p>We gladly welcome your UX, Design, and Dev ideas in our PatternFly community.</p>
       <ul>
         <li><a href="http://www.patternfly.org/community/#">Community Page</a></li>
         <li><a href="http://www.patternfly.org/get-started/contribute/#_">Contribution Guide</a></li>
         <li><a href="https://github.com/patternfly/patternfly-design">Design &amp; UX Github</a></li>
-        <li><a href="http://blog.patternfly.org/">Patternfly Blog</a></li>
+        <li><a href="http://blog.patternfly.org/">PatternFly Blog</a></li>
       </ul>
       <p>We invite you to swing by the PatternFly table just outside this room. PatternFlyers will be there until 6:30 pm to answer all your questions and hear your thoughts about the project and community.</p>
       <p>Thank you for attending the first PatternFly conference.  Just like with any good design project, we want to iterate and improve on our first release, and we can do that best with the input of our users (i. e. you!).  Please take a couple minutes to let us know what you think: <a href="http://bit.ly/PFLY2017">http://bit.ly/PFLY2017</a></p>
@@ -518,12 +519,12 @@ import {Alert} from 'patternfly-react-shims'
     <!-- Thanks -->
     <web-slide class="clear-bg no-pad" data-transition="moveFromBottom">
       <h1>Thanks!</h1>
-      <p>The Patternfly team would like to thank...</p>
+      <p>The PatternFly team would like to thank...</p>
       <ul>
         <li><a href="https://twitter.com/RedHatUXD">@RedHatUXD</a>, Red Hat</li>
         <li><a href="https://twitter.com/RedHatUXD">@gsoc</a>, Google Summer of Code</li>
         <li><a href="https://twitter.com/rob_dodson">@rob_dodson</a>, Google</li>
-        <li>UXD Devs: Brian Leathem, Dan Labreque, Xuebin Dong, David Cabrera</li>
+        <li>UXD Devs: Brian Leathem, Dan Labreque, Xuebin Dong, David Cabrera, Sarah Rambach, David Taylor</li>
       </ul>
       <img style="margin:10px auto;" src="img/clapping.gif" width="266" height="200">
       <img class="logo-brand-image" src="img/logo-brand.svg" />
@@ -538,7 +539,7 @@ import {Alert} from 'patternfly-react-shims'
         <li>Website: <a href="http://www.patternfly.org/#_">http://www.patternfly.org</a></li>
         <li>Twitter: <a href="https://twitter.com/patternfly_des">https://twitter.com/patternfly_des</a></li>
         <li>Slack channel: <a href="https://patternfly.slack.com/">https://patternfly.slack.com/</a></li>
-        <li>Patternfly Mailing List: <a href="https://www.redhat.com/mailman/listinfo/patternfly">https://www.redhat.com/mailman/listinfo/patternfly</a></li>
+        <li>PatternFly Mailing List: <a href="https://www.redhat.com/mailman/listinfo/patternfly">https://www.redhat.com/mailman/listinfo/patternfly</a></li>
         <li>Contribution Guide: <a href="https://www.patternfly.org/get-started/contribute/#_">https://www.patternfly.org/get-started/contribute/#_</a></li>
       </ul>
       <h2>Further Resources</h2>
@@ -559,7 +560,7 @@ import {Alert} from 'patternfly-react-shims'
 
   </web-presentation>
 
-  <script src="preact-demo.js"></script>
+  
 </body>
 
 </html>
