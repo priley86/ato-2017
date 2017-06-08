@@ -53,7 +53,7 @@
       window.addEventListener("hashchange", function(){
         this.goToSlide(getSlideNumberFromHash());
         var slide = getSlideNumberFromHash();
-        if(slide === 30){
+        if(slide === 29){
           window.startPreactDemo();
         }
       }.bind(this));
@@ -110,8 +110,7 @@
         history.pushState(null, null, '#' + number);
         dispatchSlideChangedEvent.call(this);
 
-        console.log(number);
-        if(number === 30){
+        if(number === 29){
           window.startPreactDemo();
         }
       }.bind(this));
