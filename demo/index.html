@@ -256,12 +256,14 @@ document.body.appendChild(button);
 (function(){
   let elementTemplate = doc.querySelector('.element-template');
   class MyElement extends HTMLElement {
-    attachedCallback() {
+    constructor() {
+      super();
       /* Create a new Shadow Root for your element */
-      this.createShadowRoot();
-
+      this._shadowRoot = this.attachShadow({ mode: "open" });
+    }
+    connectedCallback() {
       /* append your element's template */
-      this.shadowRoot.appendChild(document.importNode(elementTemplate.content, true));
+      this._shadowRoot.appendChild(document.importNode(elementTemplate.content, true));
     }
   }
 })();
@@ -277,8 +279,6 @@ document.body.appendChild(button);
       <h2>Why do we need them?</h2>
       <ul>
         <li><b>&lt;iframe&gt;</b>s are difficult to style, frustrating to script with, and don't give us the same context.</li>
-        <li><b>AJAX</b> loading everything in large bundles & minified scripts just feels wrong. It doesn't give us composable
-          pieces and overcomplicates dependency trees.</li>
         <li>Approaching <b>HTTP/2</b> standards and <b>server push</b> are a perfect fit for HTML Imports. </li>
       </ul>
       <pre is="lang-markup" theme="dark">
@@ -353,8 +353,6 @@ import {Alert} from 'patternfly-react-shims'
       <p> Some examples of common javascript components reimplemented as web components.</p>
       <h3>PF-Modal</h3>
       <p>Angular 1.6 <a href="https://plnkr.co/edit/JQu9BX?p=preview">plnkr</a> &nbsp;&nbsp; Angular2: <a href="https://plnkr.co/edit/WOLGXU?p=preview">plnkr</a>&nbsp;&nbsp; React: <a href="https://plnkr.co/edit/ftdfVA?p=preview">plnkr</a></p>
-      <h3>PF-Accordion</h3>
-      <p>Angular2: <a href="https://plnkr.co/edit/cGrMMm?p=preview">plnkr</a>&nbsp;&nbsp; React: <a href="https://jsfiddle.net/bnsr1anc/">jsfiddle</a></p>
       <h3>PF-Tabs</h3>
       <p>Angular2: <a href="https://plnkr.co/edit/OkrCvP?p=preview">plnkr</a>&nbsp;&nbsp; React: <a href="https://plnkr.co/edit/iyzD7Y1lE2mS7UquVPlh?p=preview">plnkr</a></p>
       <img class="logo-brand-image" src="img/logo-brand.svg" />
@@ -465,11 +463,6 @@ import {Alert} from 'patternfly-react-shims'
         <li>Providing a common set of UI widgets and components</li>
       </ul>
       <img class="logo-brand-image" src="img/logo-brand.svg"/>
-    </web-slide>
-
-    <!-- Dr Evil Meme -->
-    <web-slide class="purple-bg photo-slide" data-transition="moveFromBottom">
-      <img src="img/dr-evil-meme.jpg"/>
     </web-slide>
 
     <!-- Frameworks pt 2 -->
