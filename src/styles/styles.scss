@@ -48,6 +48,9 @@ web-slide {
   ul {
     margin-top: 10px;
   }
+  ul > ul {
+    margin-top: 0px;
+  }
   li {
     font-size: 15px;
     font-weight: 300;
@@ -67,8 +70,11 @@ web-slide {
     width: 100%;
     height: 100%;
   }
+  &.center-content::shadow div#content{
+    align-items: center;
+  }
   &.photo-slide img {
-    width: 80%;
+    width: 90%;
   }
   &.no-pad::shadow div#content {
     padding-top: 0px;
@@ -95,6 +101,36 @@ web-slide {
   b, optgroup, strong {
     font-weight: 600;
   }
+  & img.curved-image {
+    border-radius: 12px;
+  }
+  
+  
+  /* Tables
+  ================================== */
+  .Rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+  .Rtable-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;  // Default to full width
+    padding: 0.8em 1em;
+    overflow: hidden; // Or flex might break
+    list-style: none;
+    > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; }
+  }
+  
+  /* Table column sizing
+  ================================== */
+  .Rtable--2cols > .Rtable-cell  { width: 50%; }
+  .Rtable--3cols > .Rtable-cell  { width: 33.33%; }
+  .Rtable--4cols > .Rtable-cell  { width: 25%; }
+  .Rtable--5cols > .Rtable-cell  { width: 20%; }
+  .Rtable--6cols > .Rtable-cell  { width: 16.6%; }
 }
 
 pre {
@@ -111,6 +147,13 @@ pre {
   bottom: 25px;
   right: 20px;
   height: 26px;
+}
+
+.ato-brand-image {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  height: 55px;
 }
 
 .float-bottom {
@@ -240,6 +283,15 @@ pre {
 .source {
   text-align: center;
   font-size: .9em;
+}
+
+web-slide .rainbow {
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: 'Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%);
 }
 
 /*Starting slide*/

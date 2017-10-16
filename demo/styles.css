@@ -24,70 +24,90 @@ web-slide-title {
   web-slide-title.patternfly-bg {
     background: url("img/patternfly-bg.png") center center; }
 
-web-slide h1 {
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 0; }
-
-web-slide h2 {
-  color: rgba(0, 0, 0, 0.3);
-  margin-bottom: 0;
-  font-weight: 300; }
-
-web-slide p {
-  color: rgba(0, 0, 0, 0.7);
-  margin: 5px 0;
-  font-size: 15px;
-  font-weight: 300; }
-
-web-slide ul {
-  margin-top: 10px; }
-
-web-slide li {
-  font-size: 15px;
-  font-weight: 300; }
-
-web-slide:not(.photo-slide)::shadow div#content {
-  justify-content: initial;
-  align-items: initial;
-  text-align: initial;
-  padding: 20px; }
-
-web-slide.photo-slide::shadow div#content {
-  top: 0;
-  left: 0;
-  flex-grow: 1;
-  margin-top: 0px;
-  margin-left: 0px;
-  width: 100%;
-  height: 100%; }
-
-web-slide.photo-slide img {
-  width: 80%; }
-
-web-slide.no-pad::shadow div#content {
-  padding-top: 0px;
-  padding-bottom: 0px; }
-
-web-slide.clear-bg {
-  background: #fafafa; }
-
-web-slide.orange-bg {
-  background: #ffece0; }
-
-web-slide.yellow-bg {
-  background: #F4F2DB; }
-
-web-slide.green-bg {
-  background: #c6f0e0; }
-
-web-slide.blue-bg {
-  background: #deedfe; }
-
-web-slide.purple-bg {
-  background: #f6eefb; }
-
-web-slide b, web-slide optgroup, web-slide strong {
-  font-weight: 600; }
+web-slide {
+  /* Tables
+  ================================== */
+  /* Table column sizing
+  ================================== */ }
+  web-slide h1 {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0; }
+  web-slide h2 {
+    color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 0;
+    font-weight: 300; }
+  web-slide p {
+    color: rgba(0, 0, 0, 0.7);
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 300; }
+  web-slide ul {
+    margin-top: 10px; }
+  web-slide ul > ul {
+    margin-top: 0px; }
+  web-slide li {
+    font-size: 15px;
+    font-weight: 300; }
+  web-slide:not(.photo-slide)::shadow div#content {
+    justify-content: initial;
+    align-items: initial;
+    text-align: initial;
+    padding: 20px; }
+  web-slide.photo-slide::shadow div#content {
+    top: 0;
+    left: 0;
+    flex-grow: 1;
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%; }
+  web-slide.center-content::shadow div#content {
+    align-items: center; }
+  web-slide.photo-slide img {
+    width: 90%; }
+  web-slide.no-pad::shadow div#content {
+    padding-top: 0px;
+    padding-bottom: 0px; }
+  web-slide.clear-bg {
+    background: #fafafa; }
+  web-slide.orange-bg {
+    background: #ffece0; }
+  web-slide.yellow-bg {
+    background: #F4F2DB; }
+  web-slide.green-bg {
+    background: #c6f0e0; }
+  web-slide.blue-bg {
+    background: #deedfe; }
+  web-slide.purple-bg {
+    background: #f6eefb; }
+  web-slide b, web-slide optgroup, web-slide strong {
+    font-weight: 600; }
+  web-slide img.curved-image {
+    border-radius: 12px; }
+  web-slide .Rtable {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1em 0;
+    padding: 0; }
+  web-slide .Rtable-cell {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 100%;
+    padding: 0.8em 1em;
+    overflow: hidden;
+    list-style: none; }
+    web-slide .Rtable-cell > h1, web-slide .Rtable-cell > h2, web-slide .Rtable-cell > h3, web-slide .Rtable-cell > h4, web-slide .Rtable-cell > h5, web-slide .Rtable-cell > h6 {
+      margin: 0; }
+  web-slide .Rtable--2cols > .Rtable-cell {
+    width: 50%; }
+  web-slide .Rtable--3cols > .Rtable-cell {
+    width: 33.33%; }
+  web-slide .Rtable--4cols > .Rtable-cell {
+    width: 25%; }
+  web-slide .Rtable--5cols > .Rtable-cell {
+    width: 20%; }
+  web-slide .Rtable--6cols > .Rtable-cell {
+    width: 16.6%; }
 
 pre {
   font-size: .9em;
@@ -102,6 +122,12 @@ pre {
   bottom: 25px;
   right: 20px;
   height: 26px; }
+
+.ato-brand-image {
+  position: absolute;
+  bottom: 25px;
+  right: 20px;
+  height: 55px; }
 
 .float-bottom {
   position: absolute;
@@ -215,6 +241,14 @@ pre {
 .source {
   text-align: center;
   font-size: .9em; }
+
+web-slide .rainbow {
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: 'Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"';
+  background-image: linear-gradient(90deg, #F79533 0%, #F37055 15%, #EF4E7B 30%, #A166AB 44%, #5073B8 58%, #1098AD 72%, #07B39B 86%, #6DBA82 100%); }
 
 /*Starting slide*/
 img.patternfly-img {

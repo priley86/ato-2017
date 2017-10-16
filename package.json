@@ -1,7 +1,7 @@
 {
-  "name": "pf-con-2017",
+  "name": "ato-2017",
   "version": "1.0.3",
-  "description": "Patternfly Conference 2017 Web Components Presentation",
+  "description": "ATO Conference 2017 Web Components Presentation",
   "main": "index.js",
   "dependencies": {
     "gulp-webserver": "~0.7.1"
