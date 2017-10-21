@@ -123,11 +123,23 @@ pre {
   right: 20px;
   height: 26px; }
 
+.ato-section {
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  height: 35px; }
+  .ato-section div {
+    font-family: 'sans-serif';
+    font-style: italic;
+    font-weight: 800;
+    line-height: 35px;
+    color: #585858; }
+
 .ato-brand-image {
   position: absolute;
   bottom: 25px;
   right: 20px;
-  height: 55px; }
+  height: 35px; }
 
 .float-bottom {
   position: absolute;
