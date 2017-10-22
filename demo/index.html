@@ -8,9 +8,13 @@
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/patternfly/3.17.0/css/patternfly-additions.min.css">
   <link rel="stylesheet" href="styles.css" charset="utf-8">
   <link rel="stylesheet" href="transitions.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="freezeframe.min.css">
   <link rel="import" href="web-presentation.html">
   <link rel='import' href='https://cdn.rawgit.com/ChristianKohler/PrismComponents/master/dist/prism-components.html'>
   <link rel="stylesheet" href="https://unpkg.com/progress-spinner@1.1.0/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js"></script>
+  <script src="freezeframe.js"></script>
   <script src="https://use.fontawesome.com/da88d1f637.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/developit/9730071301c96bb1423007904c3c4293/raw/7b62e8207123fa80457d83e769bd9fe9a037c41b/preact.min.js"></script>
@@ -184,7 +188,7 @@
         <h3>Run Storybook</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 640px; height: 374px;" src="img/run-storybook.gif" />
+          <img class="freezeframe" style="width: 640px; height: 374px;" src="img/run-storybook.gif" />
         </div>
       </web-slide>
 
@@ -235,7 +239,7 @@
       </web-slide>
 
       <web-slide class="blue-bg center-content" data-transition="moveFromBottom">
-        <img style="width: 705px; height: 381px;" src="img/all-knobs-demo.gif" />
+        <img class="freezeframe" style="width: 705px; height: 381px;" src="img/all-knobs-demo.gif" />
       </web-slide>
 
       <web-slide class="blue-bg no-pad" data-transition="moveFromBottom">
@@ -252,7 +256,7 @@
         <h3>Info Addon Demo</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 563px; height: 375px;" src="img/InfoAddonDemo.gif" />
+          <img class="freezeframe" style="width: 563px; height: 375px;" src="img/InfoAddonDemo.gif" />
         </div>
     </web-slide>
 
@@ -403,7 +407,7 @@ let score = val || 0          // ✓ ok
         <h3>ESLint Demo</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 531px; height: 387px;" src="img/runlint.gif" />
+          <img class="freezeframe" style="width: 531px; height: 387px;" src="img/runlint.gif" />
         </div>
       </web-slide>
 
@@ -411,7 +415,7 @@ let score = val || 0          // ✓ ok
         <h3>Prettier Demo</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 585px; height: 387px;" src="img/prettier1.gif" />
+          <img class="freezeframe" style="width: 585px; height: 387px;" src="img/prettier1.gif" />
         </div>
       </web-slide>
 
@@ -492,7 +496,7 @@ let score = val || 0          // ✓ ok
         <h3>Jest Snapshot Demo</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 584px; height: 377px;" src="img/jestSnapshotDemo.gif" />
+          <img class="freezeframe" style="width: 584px; height: 377px;" src="img/jestSnapshotDemo.gif" />
         </div>
       </web-slide>    
 
@@ -500,7 +504,7 @@ let score = val || 0          // ✓ ok
         <h3>Updating the Snapshot</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 584px; height: 377px;" src="img/updateJestSnapshot.gif" />
+          <img class="freezeframe" style="width: 584px; height: 377px;" src="img/updateJestSnapshot.gif" />
         </div>
       </web-slide> 
 
@@ -508,7 +512,7 @@ let score = val || 0          // ✓ ok
         <h3>Jest Coverage Report</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 605px; height: 386px;" src="img/coverageReport.gif" />
+          <img class="freezeframe" style="width: 605px; height: 386px;" src="img/coverageReport.gif" />
         </div>
       </web-slide> 
 
@@ -570,7 +574,7 @@ let score = val || 0          // ✓ ok
         <h3>Semantic Release Setup</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 566px; height: 346px;" src="img/semantic-release-setup.gif" />
+          <img class="freezeframe" style="width: 566px; height: 346px;" src="img/semantic-release-setup.gif" />
         </div>
         <div class="ato-section"><div>BUILD</div></div>
         <img class="ato-brand-image" src="img/ato2017.svg" />
@@ -640,7 +644,7 @@ let score = val || 0          // ✓ ok
       <h3>Add a Commit with Commitizen</h3>
       <br/>
       <div class="text-center">
-        <img style="width: 576px; height: 382px;" src="img/npmRunCommit.gif" />
+        <img class="freezeframe" style="width: 576px; height: 382px;" src="img/npmRunCommit.gif" />
       </div>
     </web-slide>
 
@@ -658,7 +662,7 @@ let score = val || 0          // ✓ ok
         <h3>Travis Build Logs</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 612px; height: 382px;" src="img/travisBuild1.gif" />
+          <img class="freezeframe" style="width: 612px; height: 382px;" src="img/travisBuild1.gif" />
         </div>
       </web-slide>
 
@@ -676,7 +680,7 @@ let score = val || 0          // ✓ ok
       <h3>Storybook Button Styles Demo</h3>
       <br/>
       <div class="text-center">
-        <img style="width: 577px; height: 389px;" src="img/helloButtonStyles.gif" />
+        <img class="freezeframe" style="width: 577px; height: 389px;" src="img/helloButtonStyles.gif" />
       </div>
     </web-slide>
 
@@ -694,7 +698,7 @@ let score = val || 0          // ✓ ok
         <h3>NPM Publish via Travis</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 551px; height: 312px;" src="img/npmPublish.gif" />
+          <img class="freezeframe" style="width: 551px; height: 312px;" src="img/npmPublish.gif" />
         </div>
         <div class="ato-section"><div>BUILD</div></div>
         <img class="ato-brand-image" src="img/ato2017.svg" />
@@ -735,7 +739,7 @@ let score = val || 0          // ✓ ok
       <h3>Generate a deploy key</h3>
       <br/>
       <div class="text-center">
-        <img style="width: 611px; height: 390px;" src="img/generateDeployKey.gif" />
+        <img class="freezeframe" style="width: 611px; height: 390px;" src="img/generateDeployKey.gif" />
       </div>
     </web-slide>
 
@@ -743,7 +747,7 @@ let score = val || 0          // ✓ ok
         <h3>Add the deploy key in GitHub</h3>
         <br/>
         <div class="text-center">
-          <img style="width: 606px; height: 390px;" src="img/addDeployKey.gif" />
+          <img class="freezeframe" style="width: 606px; height: 390px;" src="img/addDeployKey.gif" />
         </div>
       </web-slide>
 
@@ -814,8 +818,8 @@ let score = val || 0          // ✓ ok
     </web-slide>
 
     
-    <!--
-    <web-slide class="purple-bg photo-slide" data-transition="moveFromBottom">
+    
+    <!-- <web-slide class="purple-bg photo-slide" data-transition="moveFromBottom">
         <img src="img/zenGarden.gif"/>
     </web-slide> -->
   
@@ -1114,7 +1118,7 @@ div { --color: green; }
               <h3>React Storybook + WC Demo</h3>
               <br/>
               <div class="text-center">
-                <img style="width: 611px; height: 388px;" src="img/reactWCStorybook.gif" />
+                <img class="freezeframe" style="width: 611px; height: 388px;" src="img/reactWCStorybook.gif" />
               </div>
             </web-slide>
 
@@ -1196,7 +1200,7 @@ div { --color: green; }
           <h3>Angular Storybook + WC Demo</h3>
           <br/>
           <div class="text-center">
-            <img style="width: 608px; height: 342px;" src="img/angularWcDemo.gif" />
+            <img class="freezeframe" style="width: 608px; height: 342px;" src="img/angularWcDemo.gif" />
           </div>
           <div class="ato-section"><div>WEB PLATFORM</div></div>
           <img class="ato-brand-image" src="img/ato2017.svg" />
@@ -1365,6 +1369,11 @@ div { --color: green; }
 
   </web-presentation>
 
+  <script>
+    $(function() {
+      ff = new freezeframe().freeze();
+    })
+  </script>
   
 </body>
 
